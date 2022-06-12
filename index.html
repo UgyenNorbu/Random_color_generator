@@ -5,23 +5,69 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;300;400&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;300;400&family=Roboto:ital,wght@0,400;0,700;1,500&family=Water+Brush&display=swap"
+        rel="stylesheet">
     <title>Random Color Generator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="nav-center">
-        <h2>Random Color Generator</h2>
-        <ul>
-            <li>Simple</li>
-        </ul>
+    <div class="header">
+        <div class="header-left">
+            <div class="title-1">
+                RANDOM COLOR
+            </div>
+
+            <div class="title-2">
+                Generator
+            </div>
+        </div>
+
+        <div class=" header-right">
+            <div>
+                Hex Code
+            </div>
+
+            <div>
+                RGB
+            </div>
+
+            <div>
+                Manual input
+            </div>
+        </div>
     </div>
-    <div class="container">
-        <h2 class="title">Background color: <span class="color">
-                #fif5f8
-            </span></h2>
-        <button class="btn-hero" id="btn">Click Me</button>
+
+    <div class="body">
+        <div class="body-inner">
+            <div class="top-row">
+                <div class="left">
+                    <p class="title">
+                        The current color is :
+                    </p>
+                </div>
+
+                <div class="right">
+                    <p class="hex">
+                        #ffffff
+                    </p>
+                </div>
+            </div>
+
+            <div class="bottom-row">
+                <button>Next Color</button>
+            </div>
+        </div>
     </div>
+    <script src="app.js"></script>
 </body>
 
 </html>

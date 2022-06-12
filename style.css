@@ -1,10 +1,96 @@
-.title {
-    background-color: black;
-    font-size: 3em;
-    color: red;
-    text-justify: center;
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
 }
 
-.color {
+p {
+    font-size: 28px;
+    margin: 0;
+}
 
+
+.header {
+    background-color: #888888;
+    color: rgb(255, 201, 6);
+    display: flex;
+    padding: 0 45px 0 45px;
+    justify-content: space-between;
+    align-items: center; 
+    height: 115px;
+}
+
+.title-1{
+    font-family: 'IBM Plex Sans Thai';
+    font-size: 35px;
+    font-weight:100;
+}
+
+.title-2{
+    font-family: 'Water Brush', cursive;
+    position: fixed;
+    font-size: 47px;
+    top: 45px;
+    left: 300px;
+    transform: rotate(-11deg);
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 21px;
+    width: 350px;
+    font-family: Roboto;
+}
+
+a:link, a:visited, a:hover, a:active { 
+    text-decoration: none; 
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: chocolate;
+}
+
+.body-inner {
+    margin-top: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.top-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:#888888;
+    height: 55px;
+    border-radius: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 25px;
+}
+
+.right{
+    color:white;
+}
+.bottom-row {
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin-top: 10px;
+    font-size: 22px;
+    border-radius: 19px;
+    padding: 11px;
+    color: rgb(255, 201, 6);
+    background-color:#888888;
+    border-width: 1px;
 }
