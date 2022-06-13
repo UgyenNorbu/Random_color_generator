@@ -1,8 +1,16 @@
-var characters = 'abcdef0123456789'
-var val = ""
-var outCode = ""
+// Listen for Click
+
+const button = document.querySelector('.btn');
+const body = document.querySelector('.body');
+const hex = document.querySelector('.hex');
+
+// Generate Hexcode
+
+var characters = 'abcdef0123456789';
 
 function genCode(lenCode) {
+    var val = "";
+    var outCode = "#";
     for(var i = 0; i < lenCode; i++){
         let count = Math.floor(Math.random()*16)
         val = characters.charAt(count)
@@ -10,11 +18,11 @@ function genCode(lenCode) {
         //console.log(val)
         outCode = outCode + val
     }
-    return outCode
+    return outCode;
 }
-
-console.log(genCode(6))
-
-// Listen for Click
-// Generate Hexcode
 // Assign the Hexcode to the background color of the body div
+
+button.addEventListener('click', e => {
+    body.style.backgroundColor = genCode(6);
+    hex.innerText = genCode(6);
+});
