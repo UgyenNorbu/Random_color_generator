@@ -12,11 +12,11 @@ function genCode(lenCode) {
     var val = "";
     var outCode = "#";
     for(var i = 0; i < lenCode; i++){
-        let count = Math.floor(Math.random()*16)
-        val = characters.charAt(count)
+        let count = Math.floor(Math.random()*16);
+        val = characters.charAt(count);
         //console.log(count)
         //console.log(val)
-        outCode = outCode + val
+        outCode = outCode + val;
     }
     return outCode;
 }
