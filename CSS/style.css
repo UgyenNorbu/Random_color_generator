@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+p {
+    font-size: 28px;
+    margin: 0;
+}
+
+.header {
+    background-image: linear-gradient(45deg, #4e4376, #2b5876, #4e4376);
+    /* #2b5876, #4e4376, #314755, #26a0da*/
+    color:rgb(255, 166, 0);
+    display: flex;
+    padding: 0 45px 0 45px;
+    justify-content: space-between;
+    align-items: center; 
+    height: 115px;
+}
+
+.title-1{
+    font-family: 'IBM Plex Sans Thai';
+    font-size: 35px;
+    font-weight:100;
+}
+
+.title-2{
+    font-family: 'Water Brush', cursive;
+    position: absolute;
+    font-size: 47px;
+    top: 45px;
+    left: 300px;
+    transform: rotate(-11deg);
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 21px;
+    width: 350px;
+    font-family: Roboto;
+}
+
+a:link, a:visited, a:hover, a:active { 
+    text-decoration: none; 
+    color:rgb(255, 166, 0);
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(138, 122, 156);
+}
+
+.body-inner {
+    margin-top: 285px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: fit-content;
+}
+
+.top-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /*background-color:#888888;*/
+    background-image: linear-gradient(45deg, #4e4376, #2b5876, #4e4376);
+    height: 95px;
+    border-radius: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 25px;
+}
+
+.right{
+    /*background-color: rgb(121, 73, 73);*/
+}
+
+.hex {
+    height: 100%;
+    font-size: 45spx;
+    color:white;
+    padding-left: 15px;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    margin-top: 10px;
+    font-size: 22px;
+    border-radius: 19px;
+    padding: 11px;
+    color: white;
+    /*background-color:#888888;*/
+    background-image: linear-gradient(45deg, #4e4376, #2b5876, #4e4376);
+    border-width: 0.3px;
+    cursor: pointer;
+}

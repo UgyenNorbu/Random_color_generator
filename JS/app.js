@@ -8,21 +8,22 @@ const hex = document.querySelector('.hex');
 
 var characters = 'abcdef0123456789';
 
-function genCode(lenCode) {
-    var val = "";
+function genCode() {
     var outCode = "#";
-    for(var i = 0; i < lenCode; i++){
+    for(var i = 0; i < 6; i++){
         let count = Math.floor(Math.random()*16);
-        val = characters.charAt(count);
-        //console.log(count)
-        //console.log(val)
+        let val = characters.charAt(count);
+        console.log(count)
+        console.log(val)
         outCode = outCode + val;
+        console.log(outCode);
     }
     return outCode;
 }
 // Assign the Hexcode to the background color of the body div
 
 button.addEventListener('click', e => {
-    body.style.backgroundColor = genCode(6);
-    hex.innerText = genCode(6);
+    let colorCode = genCode();
+    body.style.backgroundColor = colorCode;
+    hex.innerText = colorCode;
 });

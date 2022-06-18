@@ -12,7 +12,7 @@ p {
 
 
 .header {
-    background-image: linear-gradient(45deg, #2b5876, #4e4376);
+    background-image: linear-gradient(45deg,#4f1d5e, #9c3557, #4f1d5e);
     /* #2b5876, #4e4376, #314755, #26a0da*/
     color:rgb(255, 166, 0);
     display: flex;
@@ -47,14 +47,15 @@ p {
 }
 
 a:link, a:visited, a:hover, a:active { 
-    text-decoration: none; 
+    text-decoration: none;
+    color:rgb(255, 166, 0);
 }
 
 .body {
     display: flex;
     justify-content: center;
     height: 100%;
-    background-color: chocolate;
+    background-color: rgb(200, 133, 166);
 }
 
 .body-inner {
@@ -72,7 +73,7 @@ a:link, a:visited, a:hover, a:active {
     align-items: center;
     color: white;
     /*background-color:#888888;*/
-    background-image: linear-gradient(45deg, #2b5876, #4e4376);
+    background-image: linear-gradient(45deg,#4f1d5e, #9c3557, #4f1d5e);
     height: 95px;
     border-radius: 15px;
     padding-left: 35px;
@@ -88,6 +89,7 @@ a:link, a:visited, a:hover, a:active {
     height: 100%;
     font-size: 45spx;
     color:white;
+    padding-left: 15px;
 }
 
 .bottom-row {
@@ -102,7 +104,7 @@ button{
     padding: 11px;
     color: white;
     /*background-color:#888888;*/
-    background-image: linear-gradient(45deg, #2b5876, #4e4376);
+    background-image: linear-gradient(45deg,#4f1d5e, #9c3557, #4f1d5e);
     border-width: 0.3px;
     cursor: pointer;
 }
