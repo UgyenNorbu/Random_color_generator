@@ -63,7 +63,7 @@ a:link, a:visited, a:hover, a:active {
     font-size: 18px;
     margin-right: 5px;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     padding: 3px 8px;
 }
 
@@ -81,4 +81,11 @@ a:link, a:visited, a:hover, a:active {
 .btn-btn:hover{
     background-image: linear-gradient(rgb(230, 230, 230), rgb(230, 230, 230));
     color: #2d4d73;
+}
+
+.hash {
+    background-color: rgb(255, 255, 255);
+    height: 5%;
+    padding: 3px 10px;
+    border-radius: 5px 0 0 5px;
 }
